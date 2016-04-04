@@ -44,7 +44,7 @@ var routes 		= 	require('./src/routes/index');
 * Router Setting
 * =====================================================
 */
-app.use('/api/v1/', routes);
+app.use('/api/', routes);
 /*
 * =====================================================
 * Server starter
