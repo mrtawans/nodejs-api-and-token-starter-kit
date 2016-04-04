@@ -4,12 +4,14 @@
   "description": "discover promotion nearby you. happy hour free and flash sale ",
   "main": "index.js",
   "dependencies": {
-    "js":"*",
-    "path":"*",
-    "morgan":"*",
-    "express":"*",
-    "body-parser":"*",
-    "jsonwebtoken": "^5.7.0"
+    "body-parser": "*",
+    "express": "^4.13.1",
+    "js": "*",
+    "jsonwebtoken": "^5.7.0",
+    "mongodb": "^2.1.14",
+    "morgan": "*",
+    "path": "*",
+    "mongoose":"^4.3.1"
   },
   "devDependencies": {},
   "scripts": {

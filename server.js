@@ -10,39 +10,41 @@ var bodyParser 	= 	require('body-parser');
 var logger 		= 	require('morgan');
 var router 		= 	express.Router();
 var app 		=	express();
+var mongodb 	= 	require('mongodb');
+var mongoose    = 	require('mongoose');
+var config 		= 	require('./src/config')
 
-/*
+// Models - Database Users
+var Users 		= 	require('./src/models/users')
+
+/**
 * =====================================================
-* Template Setting
+* Configuration
 * =====================================================
 */
-app.use('/', express.static(path.join(__dirname, './dist')));
-app.use('/assets', express.static('./node_modules'));
-app.use(bodyParser.json()); // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-
+// mongoose.connect(config.database); // connect to database
 
 /*
 * =====================================================
 * Middleware
 * =====================================================
 */
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(logger('dev'));
 router.use(logger());
-
- 
 /*
 * =====================================================
 * Router Links
 * =====================================================
 */
-var routes 		= 	require('./routes');
+var routes 		= 	require('./src/routes/index');
 /*
 * =====================================================
 * Router Setting
 * =====================================================
 */
-app.use('/api', routes);
-
+app.use('/api/v1/', routes);
 /*
 * =====================================================
 * Server starter
