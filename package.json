@@ -1,0 +1,20 @@
+{
+  "name": "happyhoury",
+  "version": "1.0.0",
+  "description": "discover promotion nearby you. happy hour free and flash sale ",
+  "main": "index.js",
+  "dependencies": {
+    "js":"*",
+    "path":"*",
+    "morgan":"*",
+    "express":"*",
+    "body-parser":"*",
+    "jsonwebtoken": "^5.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run start"
+  },
+  "author": "tawan chotikanchinda (mrtawans@gmail.com)",
+  "license": "ISC"
+}
