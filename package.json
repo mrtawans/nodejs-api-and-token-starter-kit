@@ -1,6 +1,6 @@
 {
-  "name": "happyhoury",
-  "version": "1.0.0",
+  "name": "apitoken-server-stert-kit",
+  "version": "2.0.0",
   "description": "discover promotion nearby you. happy hour free and flash sale ",
   "main": "index.js",
   "dependencies": {
@@ -11,12 +11,30 @@
     "mongodb": "^2.1.14",
     "morgan": "*",
     "path": "*",
-    "mongoose":"^4.3.1"
+    "mongoose": "^4.3.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "npm run start"
+    "test": "npm run start",
+    "start": "node server.js"
   },
   "author": "tawan chotikanchinda (mrtawans@gmail.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtawans/p1.git"
+  },
+  "keywords": [
+    "api",
+    "token",
+    "restful",
+    "api",
+    "api",
+    "with",
+    "token"
+  ],
+  "bugs": {
+    "url": "https://github.com/mrtawans/p1/issues"
+  },
+  "homepage": "https://github.com/mrtawans/p1#readme"
 }

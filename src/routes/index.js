@@ -18,6 +18,7 @@ module.exports = (function(){
     		messages:'Access denied'
     	});
     });
+    
     routes.get('/auth/:username', function(req, res) {
     	/*
     	* In case of testing and developing.
