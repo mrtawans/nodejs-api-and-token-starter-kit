@@ -19,12 +19,12 @@ from cloud server or authurised server
 _Go to http://localhost:3000_
 * Do Fake Authencation 
 
-## Go to http://localhost:3000/auth/tawan
+_Go to http://localhost:3000/auth/tawan_
 * You would get generated token
 * Look at src/server/routes/index.js
 * Fetch data from RESTful API server
 
-## Go to http://localhost:3000/api/city?token=__TOKEN__
+_Go to http://localhost:3000/api/city?token=__TOKEN__
 * TO DO:
 - POST the generated token by x-www-form-urlencoded
 - Create form submit and stores token into cookies or session. 
