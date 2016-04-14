@@ -16,10 +16,11 @@ from cloud server or authurised server
 - npm install
 - npm run start
 
-_Go to http://localhost:3000_
-* Do Fake Authencation 
+__Go to http://localhost:3000 for Client
 
+__Do Fake Authencation 
 _Go to http://localhost:3000/auth/tawan_
+
 * You would get generated token
 * Look at src/server/routes/index.js
 * Fetch data from RESTful API server
