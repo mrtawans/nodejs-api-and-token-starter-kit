@@ -19,8 +19,8 @@ from cloud server or authurised server
 __Go to http://localhost:3000 for Client__
 
 __Do Fake Authencation__
-_Go to http://localhost:3000/auth/tawan_
 
+* Go to http://localhost:3000/auth/tawan_
 * You would get generated token
 * Look at src/server/routes/index.js
 * Fetch data from RESTful API server
