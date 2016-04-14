@@ -28,6 +28,6 @@ __Do Fake Authencation__
 _Go to http://localhost:3000/api/city?token=__TOKEN___
 - BOOM! you could fetch secured datas as JSON format.
 
-* TO DO:
+# TO DO:
 - POST the generated token by x-www-form-urlencoded
 - Create form submit and stores token into cookies or session. 
