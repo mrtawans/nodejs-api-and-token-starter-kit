@@ -16,9 +16,9 @@ from cloud server or authurised server
 - npm install
 - npm run start
 
-__Go to http://localhost:3000 for Client
+__Go to http://localhost:3000 for Client__
 
-__Do Fake Authencation 
+__Do Fake Authencation__
 _Go to http://localhost:3000/auth/tawan_
 
 * You would get generated token
