@@ -12,10 +12,10 @@ var router 		= 	express.Router();
 var app 		=	express();
 var mongodb 	= 	require('mongodb');
 var mongoose    = 	require('mongoose');
-var config 		= 	require('./src/config')
+var config 		= 	require('./src/server/config')
 
 // Models - Database Users
-var Users 		= 	require('./src/models/users')
+var Users 		= 	require('./src/server/models/users')
 
 /**
 * =====================================================
@@ -26,9 +26,10 @@ var Users 		= 	require('./src/models/users')
 
 /*
 * =====================================================
-* Middleware
+* Middleware Configuration
 * =====================================================
 */
+app.use(express.static(__dirname + '/src/client')); // set path for index 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(logger('dev'));
@@ -38,7 +39,7 @@ router.use(logger());
 * Router Links
 * =====================================================
 */
-var routes 		= 	require('./src/routes/index');
+var routes 		= 	require('./src/server/routes/index');
 /*
 * =====================================================
 * Router Setting
